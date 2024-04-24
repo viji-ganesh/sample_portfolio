@@ -251,3 +251,125 @@ body {
   .project-section {
     padding: 20px 20px;
   }
+}
+/**********footer-section**********/
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #303841;
+  height: 80vh;
+  color: white;
+  padding: 0px 15px;
+}
+.footer-section h2,
+p {
+  text-align: center;
+}
+.footer-section p {
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: 200;
+}
+.footer-section h2 {
+  padding: 30px 30px 0px 30px;
+  font-size: 6rem;
+}
+.social-media {
+  display: flex;
+  max-width: 980px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.social-media a {
+  text-align: center;
+  padding: 8px;
+  margin: 8px;
+  color: white;
+  text-decoration: none;
+  font-size: x-large;
+}
+.social-media i {
+  font-size: x-large;
+  padding: 10px;
+}
+.contact:hover {
+  transform: translateY(8px);
+}
+.contact {
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+/**********End***********/
+.end {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  background-color: #303841;
+  border-top: 4px solid #be3144;
+}
+.end p {
+  margin: 16px;
+  color: white;
+  font-size: 20px;
+  font-weight: 200;
+}
+.end i {
+  vertical-align: middle;
+}
+.end a {
+  text-decoration: none;
+  color: white;
+}
+/********** Breaking point**********/
+@media (max-width: 874px) {
+  .end p {
+    margin: 10px;
+    font-size: 15px;
+  }
+}
+@media(max-width:768px){
+  .footer-section h2 {
+    font-size: 42px;
+    font-weight: 700;
+}
+.social-media a{
+  margin: 0;
+  font-size: 15px;
+}
+
+.footer-section p{
+  font-size: 15px;
+} 
+.end p {
+  margin: 5px;
+  font-size: 12px;
+}
+}
+@media (max-width: 650px) {
+  .footer-section h2 {
+    padding: 20px 20px 0px 20px;
+    font-size: 38px;
+  }
+  .social-media a {
+    padding: 5px;
+    margin: 0px;
+    font-size: 12px;
+  }
+  .social-media i {
+    font-size: 15px;
+  }
+}
+@media (max-width: 460px) {
+  .end {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-section h2 {
+    padding: 30px 20px 10px 20px;
+    font-size: 30px;
+  }
+}
